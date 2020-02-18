@@ -13,10 +13,17 @@
     <TextView
         android:id="@+id/customtext"
         android:layout_width="515dp"
-        android:layout_height="100dp"
+        android:layout_height="57dp"
         android:gravity="center_horizontal"
-        android:text="@string/customer_registration_label"
+        android:text="@string/customer_registration"
         android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="399dp"
+        android:layout_height="114dp"
+        android:paddingBottom="15sp"
+        app:srcCompat="@drawable/ic_project" />
 
     <EditText
         android:id="@+id/Name"
@@ -60,7 +67,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/confirmpassword"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/phone"
@@ -68,7 +76,65 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/phone_number"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="@string/gender"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/f"
+                android:text="Female"
+                android:textSize="15dp"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/m"
+                android:text="Male"
+                android:textSize="15dp"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/o"
+                android:text="Other"
+                android:textSize="15sp"
+                android:checked="false"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="383dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/select_date"
+        android:text="@string/date_of_birth"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/btnLogin"

@@ -77,7 +77,7 @@ public class CustomerLoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(CustomerLoginActivity.this, "You are Logged in.", Toast.LENGTH_LONG).show();
+                            Toast.makeText(CustomerLoginActivity.this, "Login Successful!", Toast.LENGTH_LONG).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
                         else{

@@ -13,10 +13,17 @@
     <TextView
         android:id="@+id/customtext"
         android:layout_width="515dp"
-        android:layout_height="200dp"
+        android:layout_height="74dp"
         android:gravity="center_horizontal"
         android:text="@string/customer_login"
         android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="399dp"
+        android:layout_height="195dp"
+        android:paddingBottom="15sp"
+        app:srcCompat="@drawable/ic_project" />
 
     <EditText
         android:id="@+id/Name"
