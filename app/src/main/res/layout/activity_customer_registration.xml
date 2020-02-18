@@ -10,6 +10,14 @@
     android:orientation="vertical"
     tools:context="com.company.uneedvhelp.CustomerLoginActivity">
 
+    <TextView
+        android:id="@+id/customtext"
+        android:layout_width="515dp"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:text="@string/customer_registration_label"
+        android:textSize="28sp" />
+
     <EditText
         android:id="@+id/Name"
         android:layout_width="match_parent"
@@ -75,11 +83,4 @@
         android:gravity="center_horizontal"
         android:text="@string/already_registered_login_here" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:visibility="invisible" />
 </LinearLayout>

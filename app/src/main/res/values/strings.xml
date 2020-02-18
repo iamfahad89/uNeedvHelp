@@ -12,6 +12,7 @@
     <string name="phone_number">Phone Number</string>
     <string name="homepage_uneedvhelp">HomePage - uNeedVHelp</string>
     <string name="customer_login">CUSTOMER LOGIN</string>
-    <string name="new_user_registration">New User Registration</string>
+    <string name="new_user_registration">New User? Sign Up Here</string>
     <string name="already_registered_login_here">Already Registered ? Login Here</string>
+    <string name="customer_registration_label">Customer Registration</string>
 </resources>

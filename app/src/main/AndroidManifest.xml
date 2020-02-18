@@ -13,14 +13,14 @@
         android:theme="@style/AppTheme">
         <activity android:name=".HomepageActivity"></activity>
         <activity android:name=".CustomerRegistrationActivity" />
-        <activity android:name=".CustomerLoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".CustomerLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
