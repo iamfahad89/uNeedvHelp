@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,7 +17,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.iid.Registrar;
 
 public class CustomerRegistrationActivity extends AppCompatActivity {
     EditText mFirstName, mLastName, mEmail, mPassword, mConfirmPassword, mPhone;
@@ -32,13 +30,13 @@ public class CustomerRegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_registration);
 
-        mFirstName = findViewById(R.id.firstName);
+        mFirstName = findViewById(R.id.Name);
         mLastName = findViewById(R.id.lastName);
         mEmail = findViewById(R.id.email);
-        mPassword = findViewById(R.id.password);
+        mPassword = findViewById(R.id.Password);
         mConfirmPassword = findViewById(R.id.confirm_pw);
         mPhone = findViewById(R.id.phone);
-        mRegisterBtn = findViewById(R.id.signup_button);
+        mRegisterBtn = findViewById(R.id.btnLogin);
         mLoginBtn =  findViewById(R.id.login);
         mProgressBar = findViewById(R.id.progressBar);
         mAuth = FirebaseAuth.getInstance();
@@ -111,7 +109,7 @@ public class CustomerRegistrationActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(CustomerRegistrationActivity.this, "You are Signed Up. ", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), CustomerLoginActivity.class));
                         } else{
                             Toast.makeText(CustomerRegistrationActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }

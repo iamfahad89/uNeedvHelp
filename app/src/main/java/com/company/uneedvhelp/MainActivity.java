@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
+
     Button mLogout;
     FirebaseAuth mAuth;
 
@@ -25,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mAuth.signOut();
-                startActivity(new Intent(getApplicationContext(), CustomerRegistrationActivity.class));
+                Intent intent = new Intent(getApplicationContext(), CustomerLoginActivity.class);
+                startActivity(intent);
                 finish();
             }
         });

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "579469293428-31m3e23b2lgojcbtats18d9h649slicq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.uNeedvHelp",
+            "certificate_hash": "52d327a7c983b611fd7ec9f1856e730abe6813e5"
+          }
+        },
+        {
           "client_id": "579469293428-r5k2r8e414upnekeeaphvabutr6n69bp.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

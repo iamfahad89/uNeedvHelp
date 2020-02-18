@@ -10,24 +10,34 @@
     android:orientation="vertical"
     tools:context="com.company.uneedvhelp.CustomerLoginActivity">
 
+    <TextView
+        android:id="@+id/customtext"
+        android:layout_width="515dp"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:text="@string/customer_login"
+        android:textSize="32sp" />
+
     <EditText
-        android:id="@+id/firstName"
+        android:id="@+id/Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
 
     <Button
-        android:id="@+id/signup_button"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login_button" />
@@ -39,16 +49,25 @@
         android:text="@string/remember_me" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/sign_up" />
-
-    <TextView
-        android:id="@+id/login"
+        android:id="@+id/Fpwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/forgot_password" />
+
+    <Button
+        android:id="@+id/UserRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user_registration"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="No. of attempts remaining: " />
+
 </LinearLayout>

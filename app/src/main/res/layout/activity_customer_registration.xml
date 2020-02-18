@@ -11,12 +11,13 @@
     tools:context="com.company.uneedvhelp.CustomerLoginActivity">
 
     <EditText
-        android:id="@+id/firstName"
+        android:id="@+id/Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/firstname"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/lastName"
@@ -24,7 +25,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/lastname"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/email"
@@ -32,15 +34,17 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/confirm_pw"
@@ -59,7 +63,7 @@
         android:inputType="phone" />
 
     <Button
-        android:id="@+id/signup_button"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sign_up" />
@@ -69,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Already Registered ?  Login Here" />
+        android:text="@string/already_registered_login_here" />
 
     <ProgressBar
         android:id="@+id/progressBar"
